@@ -1,13 +1,23 @@
 # Image Processing using OpenGL Compute Shaders
 
-## Algorithms implemented
+## ALGORITHMS IMPLEMENTED
 - Color inversion
 - Grayscale conversion
 - Edge detection
 - Gamma correction
 <br>
 <p align="center">
-<h2> Original Image </h2>  
+  
+## PRE-REQUISITES
+  ```
+  sudo apt-get install cmake pkg-config
+  sudo apt-get install mesa-utils libglu1-mesa-dev freeglut3-dev mesa-common-dev
+  sudo apt-get install libglew-dev libglfw3-dev libglm-dev
+  sudo apt-get install libao-dev libmpg123-dev
+  ```
+  
+## OUTPUT  
+<h3> Original Image </h3>  
 <image src="https://user-images.githubusercontent.com/83249996/162069982-9b99476b-c0a7-42c9-bab3-6ec0a5f695ff.png" alt = "original" width = 350>
 </p>   
   
