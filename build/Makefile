@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kunal/Desktop/Gsoc/OpenGL/src
+CMAKE_SOURCE_DIR = /home/kunal/Desktop/my_github/IP-openGL/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kunal/Desktop/Gsoc/OpenGL/build
+CMAKE_BINARY_DIR = /home/kunal/Desktop/my_github/IP-openGL/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunal/Desktop/Gsoc/OpenGL/build/CMakeFiles /home/kunal/Desktop/Gsoc/OpenGL/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunal/Desktop/my_github/IP-openGL/build/CMakeFiles /home/kunal/Desktop/my_github/IP-openGL/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunal/Desktop/Gsoc/OpenGL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kunal/Desktop/my_github/IP-openGL/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,32 +150,32 @@ EBO.cpp.s:
 	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/EBO.cpp.s
 .PHONY : EBO.cpp.s
 
-Gamma.o: Gamma.cpp.o
+Main.o: Main.cpp.o
 
-.PHONY : Gamma.o
+.PHONY : Main.o
 
 # target to build an object file
-Gamma.cpp.o:
-	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/Gamma.cpp.o
-.PHONY : Gamma.cpp.o
+Main.cpp.o:
+	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/Main.cpp.o
+.PHONY : Main.cpp.o
 
-Gamma.i: Gamma.cpp.i
+Main.i: Main.cpp.i
 
-.PHONY : Gamma.i
+.PHONY : Main.i
 
 # target to preprocess a source file
-Gamma.cpp.i:
-	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/Gamma.cpp.i
-.PHONY : Gamma.cpp.i
+Main.cpp.i:
+	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/Main.cpp.i
+.PHONY : Main.cpp.i
 
-Gamma.s: Gamma.cpp.s
+Main.s: Main.cpp.s
 
-.PHONY : Gamma.s
+.PHONY : Main.s
 
 # target to generate assembly for a file
-Gamma.cpp.s:
-	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/Gamma.cpp.s
-.PHONY : Gamma.cpp.s
+Main.cpp.s:
+	$(MAKE) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/Main.cpp.s
+.PHONY : Main.cpp.s
 
 Texture.o: Texture.cpp.o
 
@@ -324,9 +324,9 @@ help:
 	@echo "... EBO.o"
 	@echo "... EBO.i"
 	@echo "... EBO.s"
-	@echo "... Gamma.o"
-	@echo "... Gamma.i"
-	@echo "... Gamma.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
 	@echo "... Texture.o"
 	@echo "... Texture.i"
 	@echo "... Texture.s"

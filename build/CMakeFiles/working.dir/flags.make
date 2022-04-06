@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kunal/Desktop/Gsoc/OpenGL/src/../headers 
+CXX_INCLUDES = -I/home/kunal/Desktop/my_github/IP-openGL/src/../headers 
 

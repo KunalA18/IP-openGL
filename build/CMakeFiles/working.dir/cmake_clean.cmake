@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/kunal/Desktop/Gsoc/OpenGL/bin/working"
-  "/home/kunal/Desktop/Gsoc/OpenGL/bin/working.pdb"
+  "/home/kunal/Desktop/my_github/IP-openGL/bin/working"
+  "/home/kunal/Desktop/my_github/IP-openGL/bin/working.pdb"
   "CMakeFiles/working.dir/EBO.cpp.o"
-  "CMakeFiles/working.dir/Gamma.cpp.o"
+  "CMakeFiles/working.dir/Main.cpp.o"
   "CMakeFiles/working.dir/Texture.cpp.o"
   "CMakeFiles/working.dir/VAO.cpp.o"
   "CMakeFiles/working.dir/VBO.cpp.o"

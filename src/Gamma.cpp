@@ -84,7 +84,7 @@ int main()
     glBindFramebuffer(GL_FRAMEBUFFER, FBO);
 
     // Texture
-    Texture home("/home/kunal/Desktop/Gsoc/OpenGL/Resource Files/Textures/desert.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+    Texture home("/home/kunal/Desktop/my_github/IP-openGL/Resource Files/Textures/desert.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
 
     // Create Render Buffer Object
     unsigned int RBO;

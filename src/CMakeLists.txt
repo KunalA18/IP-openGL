@@ -12,5 +12,5 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 include_directories("${CMAKE_SOURCE_DIR}/../headers")
 
 # add the files which are needed to generate the binary and also the name of the binary
-add_executable(working ${PROJECT_SOURCE_DIR}/Gamma.cpp ${PROJECT_SOURCE_DIR}/stb.cpp ${PROJECT_SOURCE_DIR}/shaderClass.cpp ${PROJECT_SOURCE_DIR}/Texture.cpp ${PROJECT_SOURCE_DIR}/VBO.cpp ${PROJECT_SOURCE_DIR}/VAO.cpp ${PROJECT_SOURCE_DIR}/EBO.cpp)
+add_executable(working ${PROJECT_SOURCE_DIR}/Main.cpp ${PROJECT_SOURCE_DIR}/stb.cpp ${PROJECT_SOURCE_DIR}/shaderClass.cpp ${PROJECT_SOURCE_DIR}/Texture.cpp ${PROJECT_SOURCE_DIR}/VBO.cpp ${PROJECT_SOURCE_DIR}/VAO.cpp ${PROJECT_SOURCE_DIR}/EBO.cpp)
 target_link_libraries(working PRIVATE -lGLEW -lglfw -lGL -lm)
