@@ -23,6 +23,7 @@ float rectangleVertices[] =
 
 int main()
 {
+
     // Initialize GLFW
     glfwInit();
 
@@ -74,19 +75,19 @@ int main()
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void *)(2 * sizeof(float)));
 
     // create FrameBuffer object
-    unsigned int FBO;
-    glGenFramebuffers(1, &FBO);
-    glBindFramebuffer(GL_FRAMEBUFFER, FBO);
+    // unsigned int FBO;
+    // glGenFramebuffers(1, &FBO);
+    // glBindFramebuffer(GL_FRAMEBUFFER, FBO);
 
     // Texture
-    Texture home("/home/kunal/Desktop/my_github/IP-openGL/Resource Files/Textures/desert.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+    Texture home("/home/kunal/Desktop/my_github/IP-openGL/Resource Files/Textures/cat.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
 
     // Create Render Buffer Object
-    unsigned int RBO;
-    glGenRenderbuffers(1, &RBO);
-    glBindRenderbuffer(GL_RENDERBUFFER, RBO);
-    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, 700, 700);
-    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, RBO);
+    // unsigned int RBO;
+    // glGenRenderbuffers(1, &RBO);
+    // glBindRenderbuffer(GL_RENDERBUFFER, RBO);
+    // glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, 700, 700);
+    // glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, RBO);
 
     // Error checking framebuffer
     auto fboStatus = glCheckFramebufferStatus(GL_FRAMEBUFFER);
@@ -97,19 +98,19 @@ int main()
     while (!glfwWindowShouldClose(window))
     {
         // Bind the custom framebuffer
-        glBindFramebuffer(GL_FRAMEBUFFER, FBO);
+        // glBindFramebuffer(GL_FRAMEBUFFER, FBO);
         // Specify the color of the background
         glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
         // Clean the back buffer and assign the new color to it
         glClear(GL_COLOR_BUFFER_BIT);
         // Enable depth testing since it's disabled when drawing the framebuffer rectangle
-        glEnable(GL_DEPTH_TEST);
+        // glEnable(GL_DEPTH_TEST);
         // Bind the default framebuffer
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
         // Draw the framebuffer rectangle
         framebufferProgram.Activate();
         glBindVertexArray(rectVAO);
-        glDisable(GL_DEPTH_TEST); // prevents framebuffer rectangle from being discarded
+        // glDisable(GL_DEPTH_TEST); // prevents framebuffer rectangle from being discarded
         home.Bind();
         glDrawArrays(GL_TRIANGLES, 0, 6);
         // Swap the back buffer with the front buffer
@@ -120,7 +121,7 @@ int main()
 
     // Delete all the objects we've created
     shaderProgram.Delete();
-    glDeleteFramebuffers(1, &FBO);
+    // glDeleteFramebuffers(1, &FBO);
     // Delete window before ending the program
     glfwDestroyWindow(window);
     // Terminate GLFW before ending the program

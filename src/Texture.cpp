@@ -30,7 +30,7 @@ Texture::Texture(const char *image, GLenum texType, GLenum slot, GLenum format, 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE); // Prevents edge bleeding
 
     // Assigns the image to the OpenGL Texture object
-    glTexImage2D(texType, 0, GL_SRGB, widthImg, heightImg, 0, format, pixelType, bytes);
+    glTexImage2D(texType, 0, GL_RGB, widthImg, heightImg, 0, format, pixelType, bytes);
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texType, 0);
     // Generates MipMaps
     // glGenerateMipmap(texType);

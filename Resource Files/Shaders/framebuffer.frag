@@ -32,7 +32,7 @@ void main()
     //FragColor = vec4(color, 1.0f);
 
     //inversing color
-    //FragColor = vec4(1.0f)-texture(screenTexture,texCoords);
+    FragColor = vec4(1.0f)-texture(screenTexture,texCoords);
 
     //grayscale
     //FragColor = texture(screenTexture,texCoords);
@@ -40,6 +40,6 @@ void main()
     //FragColor = vec4(average, average, average, 1.0);
 
     //gamma correction
-    vec4 fragment = texture(screenTexture, texCoords);
-    FragColor.rgb = pow(fragment.rgb, vec3(1.0f / gamma));
+    //vec4 fragment = texture(screenTexture, texCoords);
+    //FragColor.rgb = pow(fragment.rgb, vec3(1.0f / gamma));
 }

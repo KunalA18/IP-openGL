@@ -74,10 +74,6 @@ intrin.h
 arm_neon.h
 -
 
-/home/kunal/Desktop/my_github/IP-openGL/src/EBO.cpp
-EBO.h
-/home/kunal/Desktop/my_github/IP-openGL/src/EBO.h
-
 /home/kunal/Desktop/my_github/IP-openGL/src/Main.cpp
 iostream
 -
@@ -99,24 +95,4 @@ VBO.h
 /home/kunal/Desktop/my_github/IP-openGL/src/VBO.h
 EBO.h
 /home/kunal/Desktop/my_github/IP-openGL/src/EBO.h
-
-/home/kunal/Desktop/my_github/IP-openGL/src/Texture.cpp
-Texture.h
-/home/kunal/Desktop/my_github/IP-openGL/src/Texture.h
-
-/home/kunal/Desktop/my_github/IP-openGL/src/VAO.cpp
-VAO.h
-/home/kunal/Desktop/my_github/IP-openGL/src/VAO.h
-
-/home/kunal/Desktop/my_github/IP-openGL/src/VBO.cpp
-VBO.h
-/home/kunal/Desktop/my_github/IP-openGL/src/VBO.h
-
-/home/kunal/Desktop/my_github/IP-openGL/src/shaderClass.cpp
-shaderClass.h
-/home/kunal/Desktop/my_github/IP-openGL/src/shaderClass.h
-
-/home/kunal/Desktop/my_github/IP-openGL/src/stb.cpp
-stb_image.h
--
 
