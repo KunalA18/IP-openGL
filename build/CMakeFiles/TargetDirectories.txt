@@ -1,3 +1,0 @@
-/home/kunal/Desktop/my_github/IP-openGL/build/CMakeFiles/rebuild_cache.dir
-/home/kunal/Desktop/my_github/IP-openGL/build/CMakeFiles/edit_cache.dir
-/home/kunal/Desktop/my_github/IP-openGL/build/CMakeFiles/working.dir

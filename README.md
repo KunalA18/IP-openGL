@@ -27,7 +27,7 @@ We remove all colors from the scene except the white, gray and black colors; eff
   sudo apt-get install libao-dev libmpg123-dev
   ```
 ## TESTING CODE
-  ``` Note: You will have to change the path of images in Main.cpp and Gamma.cpp files. Also change the path of shaders in ShaderClass.cpp ```
+
   1. Clone the repository
   ```
   git clone https://github.com/KunalA18/IP-openGL.git
