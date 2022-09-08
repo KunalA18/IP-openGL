@@ -79,7 +79,7 @@ int main()
     glBindFramebuffer(GL_FRAMEBUFFER, FBO);
 
     // Texture
-    Texture home("../Resource Files/Textures/cat.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+    Texture home("../Resource Files/Textures/desert.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
 
     // Create Render Buffer Object
     unsigned int RBO;
